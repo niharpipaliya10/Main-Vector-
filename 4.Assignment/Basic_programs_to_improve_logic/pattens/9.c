@@ -7,12 +7,14 @@
 #include <stdio.h>
 void main()
 {
-    int i, j,a=6,c,k=6;
-    for (i = 0; i < 3; i++,a=a+k)
+    int i, j,a,c,k,n;
+    printf("Enter a row number:\n");
+    scanf("%d",&n);
+    for (i = 0,a=n*2,c,k=n*2; i < n; i++,a=a+k)
     {   
-        for (j = 0; j <3-i; j++,a=c-2)
+        for (j = 0; j <n-i; j++,a=c-2)
         {
-            printf("%d",a);
+            printf(" %d",a);
             c=a;
         }
         printf("\n");
