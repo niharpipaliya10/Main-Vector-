@@ -1,19 +1,18 @@
-// Wap to search a word on string.
+/*
+write a function user define strlen;
+*/
 #include <stdio.h>
+int my_strlen(char *);
 void main()
 {
-    char s[10], ch;
+    char s[] = "niharpipaliya";
+    printf("%d", my_strlen(s));
+}
+int my_strlen(char *p)
+{
     int i;
-    printf("Enter a string and char:\n");
-    scanf("%s %c", s, &ch);
-    printf("s=%s ch=%c\n", s, ch);
-    for (i = 0; s[i]; i++)
-    {
-        if (s[i] == ch)
-        {
-            printf("\nch is present\n");
-            return;
-        }
-    }
-    printf("\nch is not in this string");
+    for (i = 0; *(p + i); i++)
+        ;
+
+    return i;
 }
