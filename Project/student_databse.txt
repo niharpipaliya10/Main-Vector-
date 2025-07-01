@@ -1,0 +1,27 @@
+
+student database
+ Struct st
+ {
+ char batch_id[10];  // v22be8a1
+ char name[50];  //full name
+ float avg_internal_marks;  //70%
+ char assessment_status[5];  //r nr 
+struct date 
+{
+ int day;
+ int month;
+ int year;
+ }dob,doj;
+ };
+ 1) n structure record allocate dynamic memory -                             
+ 2) store batch wise record in saperate file
+ 3) search student details by join date , month , year 
+4) search student details by birth date , month , year
+ 5) search student details by name 
+6) search student details by batchid
+ 7) if any information is wrong edit it in file with right information
+ 8) search student details by marks range
+ 9) search student details by assessment status
+ 10) display all the records
+
+
