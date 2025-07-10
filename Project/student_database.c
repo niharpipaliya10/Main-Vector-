@@ -17,7 +17,7 @@ typedef struct stu
     struct date doj;
     struct stu *next;
 } sll;
-int a = 0;
+
 void add_student_info(sll **);          // add  student data
 void print_all_data(sll *);             // print all data
 void save_data_file(sll *);             // save data in file
@@ -128,7 +128,7 @@ void add_student_info(sll **ptr)
         }
         last->next = new;
     }
-    a = 1;
+
     printf("\nStudent added successfully!\n\n");
 }
 /**************************************************************************************************************************************************** */
@@ -173,7 +173,7 @@ void save_data_file(sll *ptr)
                 ptr->doj.day, ptr->doj.month, ptr->doj.year);
         ptr = ptr->next;
     }
-    a = 1;
+
     fclose(f);
     printf("Data save successful\n\n");
 }
@@ -227,7 +227,7 @@ void read_data_file(sll **ptr)
         }
         fclose(f);
         printf("read data successful\n\n");
-        a = 0;
+    
     }
     else
     {
@@ -301,7 +301,7 @@ void edit_data_file(sll **head)
         temp = temp->next;
     }
     fclose(f);
-    a = 1;
+
     printf("Record updated and saved successfully.\n\n ");
 }
 /********************************************************************************************************** */
