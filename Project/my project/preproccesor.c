@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define sys_path "C:/MinGW/include" // file path for copy
+#define sys_path "/usr/include/" // file path for copy
 #define MAX_MACROS 100
 typedef struct 
 {
